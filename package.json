@@ -1,0 +1,20 @@
+{
+  "name": "graphql-mesh-filter-transform-bug-example",
+  "version": "1.0.0",
+  "description": "An example reproduction repo for a graphql-mesh bug involving filter transforms",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angel Svirkov",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-mesh/graphql": "^0.2.11",
+    "@graphql-mesh/runtime": "^0.2.11",
+    "@graphql-mesh/transform-filter-schema": "^0.5.5",
+    "graphql": "^15.3.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0"
+  }
+}

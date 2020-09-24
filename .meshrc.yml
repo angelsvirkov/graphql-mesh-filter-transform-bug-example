@@ -1,0 +1,9 @@
+transforms:
+  - filterSchema:
+      - Query.!{continents} # Should remove continents from query
+      # - Query.{continents} # Should keep only continents
+sources:
+  - name: CountriesAPI
+    handler:
+      graphql:
+        endpoint: https://countries.trevorblades.com/
