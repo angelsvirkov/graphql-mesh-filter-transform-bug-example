@@ -18,7 +18,15 @@ getConfig().then(({ schema, contextBuilder }) => {
     "/",
     graphqlHTTP(async req => ({
       schema,
-      graphiql: true,
+      graphiql: {
+        defaultQuery: `
+query {
+  continents {
+    name
+  }
+}
+        `,
+      },
     }))
   );
 });
